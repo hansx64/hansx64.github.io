@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Brew Ha Cafe | Cart</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  </head>
+  <body id="cart">
+    <!-- Navbar -->
+    <section>
+        <nav class="navbar navbar-expand-lg bg-dark fixed-top" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+            <img src="images/logo.png" alt="Logo" width="60" height="60" class="d-inline-block align-text-middle">
+            Brew Ha
+            </a>            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link" href="index.html"><i class="bi bi-house"> Home</i></a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="about.html"><i class="bi bi-person"> About Us</i></a>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-basket"> Products</i>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="category1.html"><i class="bi bi-cup-hot"> Drinks</i></a></li>
+                    <li><a class="dropdown-item" href="category2.html"><i class="bi bi-fork-knife"> Pastry</i></a></li>
+                    <li><a class="dropdown-item" href="category3.html"><i class="bi bi-backpack"> Merchandise</i></a></li>
+                </ul>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="cart.html"><i class="bi bi-cart3"> Cart</i></a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="contact.html"><i class="bi bi-telephone"> Contact Us</i></a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="login.html"><i class="bi bi-box-arrow-in-right"> Login/Register</i></a>
+            </li>
+            </ul>
+            </div>
+        </div>
+        </nav>
+    </section>
+
+    <!-- Cart Section -->
+    <section class="container mt-5 pt-5">
+      <h1 class="text-center mb-4">Your Cart</h1>
+      <div class="table-responsive">
+        <table class="table align-middle text-center">
+          <thead class="table-dark">
+            <tr>
+              <th scope="col">Product</th>
+              <th scope="col">Name</th>
+              <th scope="col">Price</th>
+              <th scope="col">Quantity</th>
+              <th scope="col">Subtotal</th>
+              <th scope="col">Remove</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><img src="images/americano.png" width="80" height="80" class="rounded" alt=""></td>
+              <td>Americano</td>
+              <td>150 Php</td>
+              <td>
+                <input type="number" class="form-control text-center" style="width: 80px; margin: auto;" value="1" min="1">
+              </td>
+              <td>150 Php</td>
+              <td><button class="btn btn-danger btn-sm"><i class="bi bi-trash"></i></button></td>
+            </tr>
+            <tr>
+              <td><img src="images/caramel.png" width="80" height="80" class="rounded" alt=""></td>
+              <td>Caramel Macchiato</td>
+              <td>300 Php</td>
+              <td>
+                <input type="number" class="form-control text-center" style="width: 80px; margin: auto;" value="2" min="1">
+              </td>
+              <td>600 Php</td>
+              <td><button class="btn btn-danger btn-sm"><i class="bi bi-trash"></i></button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Cart Summary -->
+      <div class="row mt-4">
+        <div class="col-md-6 offset-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Order Summary</h4>
+              <hr>
+              <p class="d-flex justify-content-between">
+                <span>Subtotal:</span>
+                <span>750 Php</span>
+              </p>
+              <p class="d-flex justify-content-between">
+                <span>Delivery Fee:</span>
+                <span>50 Php</span>
+              </p>
+              <hr>
+              <h5 class="d-flex justify-content-between">
+                <span>Total:</span>
+                <span><strong>800 Php</strong></span>
+              </h5>
+              <div class="d-grid gap-2 mt-3">
+                <button class="btn btn-success btn-lg"><i class="bi bi-credit-card"></i> Proceed to Checkout</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br><br>
+
+    <!-- Footer -->
+    <footer class="bg-body-tertiary text-center bg-dark">
+      <div class="container p-4">
+        <section class="">
+          <form action="">
+            <div class="row d-flex justify-content-center">
+              <div class="col-auto">
+                <p class="pt-2"><strong>Sign up for our community</strong></p>
+              </div>
+              <div class="col-md-5 col-12">
+                <div class="form-outline mb-4">
+                  <input type="email" id="form5Example24" class="form-control" />
+                  <label class="form-label" for="form5Example24">Email address</label>
+                </div>
+              </div>
+              <div class="col-auto">
+                <button type="submit" class="btn btn-outline mb-4">Subscribe</button>
+              </div>
+            </div>
+          </form>
+        </section>
+      </div>
+
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2025 Copyright:
+        <a class="text-reset fw-bold" href="https://mdbootstrap.com/">brewha.com</a>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
+</html>

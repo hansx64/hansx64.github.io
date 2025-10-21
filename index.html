@@ -1,0 +1,310 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Brew Ha Cafe</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  </head>
+  <body id="home">
+    <section>
+        <nav class="navbar navbar-expand-lg bg-dark fixed-top" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+            <img src="images/logo.png" alt="Logo" width="60" height="60" class="d-inline-block align-text-middle">
+            Brew Ha
+            </a>            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"><i class="bi bi-house"> Home</i></a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="about.html"><i class="bi bi-person"> About Us</i></a>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-basket"> Products</i>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="category1.html"><i class="bi bi-cup-hot"> Drinks</i></a></li>
+                    <li><a class="dropdown-item" href="category2.html"><i class="bi bi-fork-knife"> Pastry</i></a></li>
+                    <li><a class="dropdown-item" href="category3.html"><i class="bi bi-backpack"> Merchandise</i></a></li>
+                </ul>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="cart.html"><i class="bi bi-cart3"> Cart</i></a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="contact.html"><i class="bi bi-telephone"> Contact Us</i></a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="login.html"><i class="bi bi-box-arrow-in-right"> Login/Register</i></a>
+            </li>
+            </ul>
+            </div>
+        </div>
+        </nav>
+    </section>
+
+    <!-- Carousel -->
+    <section class="d-flex justify-content-center my-5">
+        <div id="carouselExampleCaptions" class="carousel slide w-75">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+            <img src="images/front.png" class="d-block w-100 rounded" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Brewed with Purpose.</h5>
+                <p>Craft Coffee, Good Vibes.</p>
+            </div>
+            </div>
+            <div class="carousel-item">
+            <img src="images/side.png" class="d-block w-100 rounded" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Your Happy Hour, Anytime.</h5>
+                <p>Pure. Simple. Coffee.</p>
+            </div>
+            </div>
+            <div class="carousel-item">
+            <img src="images/inside.png" class="d-block w-100 rounded" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Unlock Your Day.</h5>
+                <p>Your Corner of Comfort.</p>
+            </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        </div>
+    </section>
+
+    <br id="coffee">
+    <hr>
+    <br>
+
+    <!-- Card (Drink)-->
+     <section>
+        <h1 class="top text-center mt-4">Top Selling Drinks</h1>
+        <div class="row row-cols-1 row-cols-md-3 mt-5 mx-5">
+            <div class="col">
+                <div class="card h-100 text-center">
+                <img src="images/americano.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Americano</h5>
+                    <p class="card-text text-center">Strong, bitter, and pure, made from steeped ground coffee beans.</p>
+                    <h3>150 Php</h3>
+                    <button type="button" class="btn btn-warning">Click to Order</button>
+                </div>
+                <div class="card-footer">
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 text-center">
+                <img src="images/cappucino.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Cappucino</h5>
+                    <p class="card-text text-center">A refreshing, diluted espresso poured over ice.</p>
+                    <h3>150 Php</h3>
+                    <button type="button" class="btn btn-warning button-center">Click to Order</button>
+                </div>
+                <div class="card-footer">
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 text-center">
+                <img src="images/iced.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Iced Coffee</h5>
+                    <p class="card-text">A classic Italian dessert of coffee-soaked ladyfingers layered with sweet mascarpone cream.</p>
+                    <h3>150 Php</h3>
+                    <button type="button" class="btn btn-warning">Click to Order</button>
+                </div>
+                <div class="card-footer">
+                </div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+    <br id="pastry">
+    <hr>
+    <br>
+
+     <!-- Card (Pastry)-->
+     <section>
+        <h1 class="top text-center mt-4">Top Selling Pastry</h1>
+        <div class="row row-cols-1 row-cols-md-3 mt-5 mx-5">
+            <div class="col">
+                <div class="card h-100 text-center">
+                <img src="images/croissant.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Croissant</h5>
+                    <p class="card-text text-center">Strong, bitter, and pure, made from steeped ground coffee beans.</p>
+                    <h3>150 Php</h3>
+                    <button type="button" class="btn btn-warning">Click to Order</button>
+                </div>
+                <div class="card-footer">
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 text-center">
+                <img src="images/danish.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Danish Pastry</h5>
+                    <p class="card-text text-center">A refreshing, diluted espresso poured over ice.</p>
+                    <h3>150 Php</h3>
+                    <button type="button" class="btn btn-warning button-center">Click to Order</button>
+                </div>
+                <div class="card-footer">
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 text-center">
+                <img src="images/cinnamon.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Cinnamon Roll</h5>
+                    <p class="card-text">A classic Italian dessert of coffee-soaked ladyfingers layered with sweet mascarpone cream.</p>
+                    <h3>150 Php</h3>
+                    <button type="button" class="btn btn-warning">Click to Order</button>
+                </div>
+                <div class="card-footer">
+                </div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+     <br id="merch">
+    <hr>
+    <br>
+
+     <!-- Card (Merchandise)-->
+     <section>
+        <h1 class="top text-center mt-4">Merchandise</h1>
+        <div class="row row-cols-1 row-cols-md-3 mt-5 mx-5">
+            <div class="col">
+                <div class="card h-100 text-center">
+                <img src="images/coaster.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Coaster</h5>
+                    <p class="card-text text-center">Strong, bitter, and pure, made from steeped ground coffee beans.</p>
+                    <h3>150 Php</h3>
+                    <button type="button" class="btn btn-warning">Click to Order</button>
+                </div>
+                <div class="card-footer">
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 text-center">
+                <img src="images/tote.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Tote Bag</h5>
+                    <p class="card-text text-center">A refreshing, diluted espresso poured over ice.</p>
+                    <h3>150 Php</h3>
+                    <button type="button" class="btn btn-warning button-center">Click to Order</button>
+                </div>
+                <div class="card-footer">
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 text-center">
+                <img src="images/mug.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Mug</h5>
+                    <p class="card-text">A classic Italian dessert of coffee-soaked ladyfingers layered with sweet mascarpone cream.</p>
+                    <h3>150 Php</h3>
+                    <button type="button" class="btn btn-warning">Click to Order</button>
+                </div>
+                <div class="card-footer">
+                </div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
+
+  <!-- Footer -->
+<footer class="bg-body-tertiary text-center bg-dark">
+  <!-- Grid container -->
+  <div class="container p-4">
+
+    <!-- Section: Form -->
+    <section class="">
+      <form action="">
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center">
+          <!--Grid column-->
+          <div class="col-auto">
+            <p class="pt-2">
+              <strong>Sign up for our community</strong>
+            </p>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-5 col-12">
+            <!-- Email input -->
+            <div data-mdb-input-init class="form-outline mb-4">
+              <input type="email" id="form5Example24" class="form-control" />
+              <label class="form-label" for="form5Example24">Email address</label>
+            </div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-auto">
+            <!-- Submit button -->
+            <button data-mdb-ripple-init type="submit" class="btn btn-outline mb-4">
+              Subscribe
+            </button>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </form>
+    </section>
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2025 Copyright:
+    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">brewha.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+</html>
+
+
+
